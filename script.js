@@ -4,7 +4,7 @@ let peso = prompt("Introduce tu peso en Kg");
 
 
 function imc(sexo, altura, peso){
-	let indice= (peso / Math.pow(altura,2));
+	let indice= (peso / (altura*altura));
 	let resultado ="";
 
 	switch (sexo)
@@ -55,7 +55,7 @@ return ": " + indice  + " y estás clasificado como :" + resultado;
 
 function mostraresultado (sexo, altura, peso, indice)
 {
-	let mensaje = "Usted ingresó sexo: "+ sexo + ", altura :"+ altura + ", peso :" + peso + ", lo que da un indice de: "+indice; 
+	let mensaje = "Ingresaste sexo: "+ sexo + ", altura :"+ altura + ", peso :" + peso + ", lo que da un indice de: "+indice; 
 	alert (mensaje); 
 }
 
